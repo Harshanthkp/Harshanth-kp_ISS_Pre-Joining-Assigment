@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookcolor.xsl"?>
+<!DOCTYPE bookstore
+[
+<!ELEMENT books (book+)>
+<!ELEMENT book (name+, author+, price+, quantity+, publisher?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ATTLIST book asin CDATA #REQUIRED>
+]
+>
+<books>
+ <book asin="1">
+ <name>HTML</name>
+ <author>JAMES</author>
+ <price>2000</price>
+<quantity>50</quantity>
+ <publisher>PEARSON</publisher>
+ </book>
+ <book asin="2">
+ <name>JAVASCRIPT</name>
+ <author>GOSWLING</author>
+ <price>700</price>
+ <quantity>510</quantity>
+ <publisher>ARORA</publisher>
+ </book>
+ <book asin="3">
+ <name>CSS</name>
+ <author>PETERSON</author>
+ <price>800</price>
+<quantity>510</quantity>
+ <publisher>CHAND</publisher>
+ </book>
+<book asin="4">
+ <name>XML</name>
+ <author>DANIEL</author>
+ <price>750</price>
+<quantity>150</quantity>
+ <publisher>james</publisher>
+ </book>
+ <book asin="5">
+ <name>REACT JS</name>
+ <author>PONTING</author>
+ <price>2500</price>
+<quantity>100</quantity>
+ <publisher>SAMUEL</publisher>
+ </book>
+ <book asin="6">
+ <name>NODE JS</name>
+ <author>BRAVO</author>
+ <price>1100</price>
+<quantity>80</quantity>
+ <publisher>DWAYNE</publisher>
+ </book>
+ <book asin="7">
+ <name>PHP</name>
+ <author>SHAYNE</author>
+ <price>3000</price>
+<quantity>70</quantity>
+ <publisher>WATSON</publisher>
+ </book>
+ <book asin="8">
+ <name>JAVA</name>
+ <author>WARNER</author>
+ <price>2000</price>
+<quantity>110</quantity>
+ <publisher>DAVID</publisher>
+ </book>
+ <book asin="9">
+ <name>PYTHON</name>
+ <author>KANE</author>
+ <price>1000</price>
+<quantity>170</quantity>
+ <publisher>WILLIAMSON</publisher>
+ </book>
+ <book asin="10">
+ <name>C</name>
+ <author>GOLDSMITH</author>
+ <price>2000</price>
+<quantity>270</quantity>
+ <publisher>GAYLE</publisher>
+ </book>
+ <book asin="11">
+ <name>C++</name>
+ <author>CHARLES</author>
+ <price>200</price>
+<quantity>100</quantity>
+ <publisher>JOHN</publisher>
+ </book>
+</books>
