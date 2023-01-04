@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Events in JS</title>
+    </head>
+    <body>
+
+        <!--ONCLICK EVENT-->
+        <p id="onclick">This is to check the button onclick</p>
+        
+        <button onclick="document.getElementById('onclick').innerHTML=Date()">Your Time is : </button>
+        
+        <!--ONCHANGE EVENT-->
+        <h2>Javascript HTML events - onchange()</h2>
+        Enter Name: <input type="text" id="name" onchange="upperCase()">
+        <p>When input field is typed and left function will change the case of the inputted text to uppercase</p>
+
+        <script>
+            function upperCase(){
+                const x = document.getElementById("name");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    
+    </body>
+</html>

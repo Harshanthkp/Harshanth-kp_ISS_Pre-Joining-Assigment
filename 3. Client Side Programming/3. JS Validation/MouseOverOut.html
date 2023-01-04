@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> This event works on hovering the mouse</title>
+    </head>
+    <body>
+        <div onmouseover="mOver(this)" onmouseout="Mout(this)" style="background-color: rebeccapurple; width: 120px; height: 30px; padding: 40px;">Mouse Over Me to change</div>
+
+        <script>
+            function mOver(obj){
+                obj.innerHTML = "Magic is here!"
+            }
+            function Mout(obj){
+                obj.innerHTML="Mouse over me to change"
+            }
+        </script>
+    </body>
+</html>

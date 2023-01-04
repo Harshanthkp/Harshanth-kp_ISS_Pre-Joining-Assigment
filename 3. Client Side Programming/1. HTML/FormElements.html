@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>HTML Form Elements</title>
+    </head>
+    <body>
+        <form action="/action_pag.php" method="get">
+            <fieldset>
+                <legend>Contents</legend>
+            <label for="Courses">Choose a Course</label>
+            <select id="Courses" name="Courses">
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+            
+            <br><br>
+            <textarea name="Other" rows="10" cols="30">Other courses needed: </textarea>
+            <br>
+            <br>
+            <label for="Books">Books needed: </label>
+            <input list="Books" name="Books">
+            <datalist id="Books">
+                <option value="Gfg"></option>
+                <option value="W3"></option>
+                <option value="JavaTPoint"></option>
+            </datalist>
+            <input type="submit">
+        </fieldset>
+            <br>
+            <button type="button" onclick="alert('Any error in content')"> Click Me for Error</button>
+            <br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

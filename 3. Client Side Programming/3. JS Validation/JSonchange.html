@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Onchange event in JS</title>
+    </head>
+    <body>
+        <h2>This changes the Case of the inputted text</h2>
+        Enter Name: <input type="text" id="name" onchange="upperCase()">
+        <script>
+            function upperCase(){
+                const x = document.getElementById("name");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>
