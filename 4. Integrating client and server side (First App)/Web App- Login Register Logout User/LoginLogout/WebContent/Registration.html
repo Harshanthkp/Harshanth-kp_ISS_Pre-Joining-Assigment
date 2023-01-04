@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form </title>
+<script src="javascript/validation.js"> </script>
+</head>
+<body>
+<h1>Registration Form - Web APP ISS</h1>
+<form name="registration" onsubmit="return validation()" action="registration_action" method="post">
+		<table style="width: 60%">
+		<tr>
+				<td>FirstName</td>
+				<td><input type="text" id="firstname" name="firstname" /></td>
+			</tr>
+			<tr>
+				<td>LastName</td>
+				<td><input type="text" id="lastname" name="lastname" /></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input type="text" id="age" name="age" /></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" id="address" name="address" /></td>
+			</tr>
+			<tr>
+				<td>UserName</td>
+				<td><input type="text" id="username" name="username" /></td>
+			</tr>
+				<tr>
+				<td>Password</td>
+				<td><input type="password" id="passwrd" name="passwrd" /></td>
+			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td><input type="password" id="passwrdconf" name="passwrdconf" /></td>
+			</tr>
+		</table>
+		<br><br><input type="submit" value="Register" /></form><button onclick="location.href = 'LoginServlet.java';">Login</button>
+</body>
+</html>
